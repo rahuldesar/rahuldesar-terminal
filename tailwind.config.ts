@@ -8,11 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        body: "rgb(var(--primary-text-rgb))",
+        bodySecondary: "rgb(var(--secondary-text-rgb))",
+        primary: "rgb(var(--primary-text-rgb))",
+        secondary: "rgb(var(--secondary-text-rgb))",
+        scrollHandle: "rgb(var(--secondary-text-rgb))",
+        scrollHandleDark: "rgb(var(--secondary-text-rgb))",
       },
+    },
+    fontFamily: {
+      ubuntu: ["Ubuntu Mono", "sans-serif"],
     },
   },
   plugins: [],

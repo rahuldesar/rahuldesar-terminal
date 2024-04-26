@@ -1,30 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255; 
+  --background-rgb: 30, 30, 46;
+  --primary-rgb: 236, 238, 242; 
+  --secondary-rgb: 192, 194, 199;
+  --primary-text-rgb: 166, 227, 161;
+  --secondary-text-rgb: 108, 99, 255;
+  --error-text-rgb: 203, 166, 247;
+  --warning-text-rgb: 245, 194, 231;
 }
+/*
 
+text1 = rgb(148, 226, 213)
+text2 = rgb(235, 160, 172)
+text3 = rgb(245, 194, 231) // yellow
+
+*/
+/*
+ * TODO: This is redundant for now, all user will have catpuccin, I might change this later so only users who prefer
+ * dark scheme will have catpuccin theme
+ *
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  --foreground-rgb: 0, 0, 0; 
+  --background-rgb: 48, 52, 70;
+  --primary-rgb: 236, 238, 242; 
+  --secondary-rgb: 192, 194, 199;
+  --primary-text-rgb: 166, 227, 161;
+  --secondary-text-rgb: 108, 99, 255;
+  --error-text-rgb: 203, 166, 247;
   }
 }
+*/
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
 }
+
+input[type=text] {
+  width: 20rem;
+  background-color: rgb(var(--background-rgb));
+  color: rgb(var(--primary-text-rgb));
+}
+input[type=text]:focus-visible {
+  outline: none;
+}
+
 
 @layer utilities {
   .text-balance {
