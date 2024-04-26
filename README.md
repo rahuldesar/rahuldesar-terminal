@@ -11,17 +11,19 @@
 
 ## Todo list
 
-- [ ] ColorScheme Toggler
+- [x] ColorScheme Toggler
 
-  - [ ] Catpuccin
-  - [ ] Ubuntu
-  - [ ] Dracula
-  - [ ] Tokyo Night
-  - [ ] Gruvbox
-  - [ ] White
-  - [ ] Green
+  - [x] Catpuccin (Default)
+  - [x] Ubuntu
+  - [x] Dracula
+  - [x] Tokyo Night
+  - [x] Gruvbox
+  - [x] White
+  - [x] Goblin-Green
+  - [x] Espresso
+  - [x] Blue-Matrix
 
-- [ ] Terminal Blank UI ( `user@rahuldesar :>` + welcome screen with ascii art + minified about me )
+- [x] Terminal Blank UI ( `user@rahuldesar :$` + welcome screen with ascii art + minified about me )
 - [ ] Clear
 - [ ] Cancel
 - [ ] History

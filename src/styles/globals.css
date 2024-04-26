@@ -7,13 +7,134 @@
 :root {
   --foreground-rgb: 255, 255, 255; 
   --background-rgb: 30, 30, 46;
-  --primary-rgb: 236, 238, 242; 
-  --secondary-rgb: 192, 194, 199;
-  --primary-text-rgb: 166, 227, 161;
-  --secondary-text-rgb: 108, 99, 255;
+  --primary-rgb: 166, 227, 161;
+  --secondary-rgb: 108, 99, 255;
+  --primary-text-rgb: 236, 238, 242; 
+  --secondary-text-rgb: 192, 194, 199;
   --error-text-rgb: 203, 166, 247;
   --warning-text-rgb: 245, 194, 231;
 }
+
+.light {
+  --background-rgb: 239, 243, 243;
+  --foreground-rgb: 2, 116, 116;
+  --primary-rgb: 51, 65, 85;
+  --secondary-rgb: 71, 85, 105;
+  --primary-text-rgb: 2, 116, 116;
+  --secondary-text-rgb: 255, 157, 0;
+  --error-text-rgb: 203, 166, 247;
+  --warning-text-rgb: 245, 194, 231;
+  --scroll-handle-rgb: 193, 193, 193;
+  --scroll-handle-hover-rgb: 170, 170, 170;
+}
+
+.blue-matrix {
+  --background-rgb: 16, 17, 22;
+  --foreground-rgb: 255, 255, 255;
+  --primary-rgb: 0, 255, 156;
+  --secondary-rgb: 96, 253, 255;
+  --primary-text-rgb: 255, 255, 255;
+  --secondary-text-rgb: 199, 199, 199;
+  --error-text-rgb: 203, 166, 247;
+  --warning-text-rgb: 245, 194, 231;
+  --scroll-handle-rgb: 66, 66, 66;
+  --scroll-handle-hover-rgb: 97, 97, 97;
+}
+
+.espresso {
+  --background-rgb: 50, 50, 50;
+  --foreground-rgb: 247, 247, 247;
+  --primary-rgb: 225, 228, 139;
+  --secondary-rgb: 165, 194, 96;
+  --primary-text-rgb: 247, 247, 247;
+  --secondary-text-rgb: 165, 194, 96;
+  --error-text-rgb: 203, 166, 247;
+  --warning-text-rgb: 245, 194, 231;
+  --scroll-handle-rgb: 91, 91, 91;
+  --scroll-handle-hover-rgb: 57, 57, 57;
+}
+
+.green-goblin {
+  --background-rgb: 0, 0, 0;
+  --foreground-rgb: 1, 255, 0;
+  --primary-rgb: 229, 229, 0;
+  --secondary-rgb: 4, 165, 0;
+  --primary-text-rgb: 1, 255, 0;
+  --secondary-text-rgb: 4, 165, 178;
+  --error-text-rgb: 203, 166, 247;
+  --warning-text-rgb: 245, 194, 231;
+  --scroll-handle-rgb: 46, 46, 46;
+  --scroll-handle-hover-rgb: 65, 65, 65;
+}
+
+.ubuntu {
+  --background-rgb: 45, 9, 34;
+  --foreground-rgb: 255, 255, 255;
+  --primary-rgb: 128, 217, 50;
+  --secondary-rgb: 128, 217, 50;
+  --primary-text-rgb: 255, 255, 255;
+  --secondary-text-rgb: 255, 255, 255;
+  --error-text-rgb: 203, 166, 247;
+  --warning-text-rgb: 245, 194, 231;
+  --scroll-handle-rgb: 244, 120, 69;
+  --scroll-handle-hover-rgb: 230, 95, 49;
+}
+
+.gruvbox {
+  --background-rgb: 40, 40, 40;
+  --foreground-rgb: 235, 219, 178;
+  --primary-rgb: 69, 133, 136;
+  --secondary-rgb: 146, 131, 116;
+  --primary-text-rgb: 235, 219, 178;
+  --secondary-text-rgb: 235, 219, 178;
+  --error-text-rgb: 204, 36, 29;
+  --warning-text-rgb: 250, 189, 47;
+  --scroll-handle-rgb: 195, 232, 141;
+  --scroll-handle-hover-rgb: 79, 214, 190;
+
+}
+
+/* TODO: BETTER COLOR */
+.tokyo-night {
+  --background-rgb: 31, 35, 53;
+  --foreground-rgb: 162, 176, 222;
+  --primary-rgb: 59, 66, 97;
+  --secondary-rgb: 115, 122, 162;
+  --primary-text-rgb: 162, 176, 222;
+  --secondary-text-rgb: 162, 176, 222;
+  --error-text-rgb: 255, 158, 100;
+  --warning-text-rgb: 255, 199, 119;
+  --scroll-handle-rgb: 195, 232, 141;
+  --scroll-handle-hover-rgb: 79, 214, 190;
+}
+
+/* TODO: Similar to Tokyo night  */
+.rose-pine {
+  --background-rgb: 25, 23, 36;
+  --foreground-rgb: 224, 222, 244;
+  --primary-rgb: 49, 116, 143;
+  --secondary-rgb: 110, 106, 134;
+  --primary-text-rgb: 224, 222, 244;
+  --secondary-text-rgb: 224, 222, 244;
+  --error-text-rgb: 235, 111, 146;
+  --warning-text-rgb: 246, 193, 119;
+  --scroll-handle-rgb: 195, 232, 141;
+  --scroll-handle-hover-rgb: 79, 214, 190;
+}
+
+.dracula {
+  --background-rgb: 40, 42, 54;
+  --foreground-rgb: 248, 248, 242;
+  --primary-rgb: 255, 85, 85;
+  --secondary-rgb: 98, 114, 164;
+  --primary-text-rgb: 248, 248, 242;
+  --secondary-text-rgb: 248, 248, 242;
+  --error-text-rgb: 255, 121, 198;
+  --warning-text-rgb: 255, 184, 108;
+  --scroll-handle-rgb: 195, 232, 141;
+  --scroll-handle-hover-rgb: 79, 214, 190;
+}
+
 
 /*
  * TODO: This is redundant for now, all user will have catpuccin, I might change this later so only users who prefer
@@ -40,7 +161,7 @@ body {
 input[type=text] {
   width: 20rem;
   background-color: rgb(var(--background-rgb));
-  color: rgb(var(--primary-rgb));
+  color: rgb(var(--primary-text-rgb));
 }
 input[type=text]:focus-visible {
   outline: none;

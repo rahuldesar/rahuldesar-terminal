@@ -48,8 +48,8 @@ const Welcome = () => {
         </pre>
         <CommonWelcomeText />
       </div>
-      <div className="hidden h-full w-full items-center md:block">
-        <pre className="text-sm text-secondary">
+      <div className="hidden h-full w-full pl-12 justify-end md:block">
+        <pre className="text-sm text-secondary justify-end">
           {" "}
           {`
                 _____________________________     

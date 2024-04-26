@@ -11,8 +11,8 @@ const config: Config = {
       colors: {
         body: "rgb(var(--primary-text-rgb))",
         bodySecondary: "rgb(var(--secondary-text-rgb))",
-        primary: "rgb(var(--primary-text-rgb))",
-        secondary: "rgb(var(--secondary-text-rgb))",
+        primary: "rgb(var(--primary-rgb))",
+        secondary: "rgb(var(--secondary-rgb))",
         scrollHandle: "rgb(var(--secondary-text-rgb))",
         scrollHandleDark: "rgb(var(--secondary-text-rgb))",
       },
