@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Designed as Terminal
 
-## Getting Started
+## Feature Checklist
 
-First, run the development server:
+- [ ] Multiple themes
+- [ ] Autocomplete feature (`TAB`)
+- [ ] Clear feature (`Ctrl + l`)
+- [ ] Cancel/Halt feature (`Ctrl + C`)
+- [ ] Go previous and next command ⬆️⬇️
+- [ ] View command history (`history`)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Todo list
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [ ] ColorScheme Toggler
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+  - [ ] Catpuccin
+  - [ ] Ubuntu
+  - [ ] Dracula
+  - [ ] Tokyo Night
+  - [ ] Gruvbox
+  - [ ] White
+  - [ ] Green
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [ ] Terminal Blank UI ( `user@rahuldesar :>` + welcome screen with ascii art + minified about me )
+- [ ] Clear
+- [ ] Cancel
+- [ ] History
+- [ ] Commands
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  - Basics
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    - [ ] echo
+    - [ ] help
+    - [ ] ls
+    - [ ] cat
+    - [ ] whoami?
+    - [ ] neofetch - pulls info from github
+    - [ ] - Maybe create api in this next project for better api handling (think this is redundant)
+    - [ ] pwd - list files (resume and stuff)
+    - [ ] - Open resume using `cat` or other command `open`
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - Portfolio Specifics
+    - [ ] about
+    - [ ] education
+    - [ ] projects
+    - [ ] learning
+    - [ ] skills
+    - [ ] resume
+    - [ ] email
