@@ -1,8 +1,11 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React, { useContext } from "react";
 import Welcome from "./commands/Welcome";
 import NotFound from "./commands/NotFound";
 import PromptHeader from "./PromptHeader";
 import Help from "./commands/Help";
+import Themes from "./commands/Themes";
+import { THEMES } from "@/constants/themes";
+import { ThemeContext } from "@/pages";
 
 type CommandHandlerProp = {
   command: string;
@@ -22,12 +25,21 @@ const CommandHandler: React.FC<CommandHandlerProp> = ({
   command,
   clearScreen,
 }) => {
+  const themeSwitcher = useContext(ThemeContext);
+
+  const themeChanger = (command: string) => {
+    const themeName = command.split(" ")[2];
+    if (THEMES.some((theme) => theme.name === themeName)) {
+      themeSwitcher?.(themeName);
+    }
+  };
+
   switch (command) {
     case "themes":
       return (
         <>
           <Common command={command} />
-          themes
+          <Themes />
         </>
       );
 
@@ -53,6 +65,7 @@ const CommandHandler: React.FC<CommandHandlerProp> = ({
 
     default:
       if (command.startsWith("themes set")) {
+        themeChanger(command);
         return (
           <>
             <Common command={command} />

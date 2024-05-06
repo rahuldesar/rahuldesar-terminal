@@ -19,6 +19,7 @@ export const COMMANDS: Command[] = [
   { cmd: "pwd", desc: "return working directory name", tab: 10 },
   { cmd: "socials", desc: "check out my social accounts", tab: 6 },
   { cmd: "help", desc: "check available commands", tab: 9 },
+  { cmd: "?", desc: "check available commands", tab: 9 },
   { cmd: "learning", desc: "stuff i am learning", tab: 9 },
   { cmd: "skills", desc: "view my skill arsenals", tab: 9 },
   { cmd: "neofetch", desc: "github information", tab: 9 },

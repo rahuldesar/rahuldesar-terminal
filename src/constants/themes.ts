@@ -1,9 +1,9 @@
 type SystemThemes = {
   name: string;
   class: string;
-}[];
+};
 
-export const THEMES: SystemThemes = [
+export const THEMES: SystemThemes[] = [
   { name: "catpuccin", class: "" },
   { name: "ubuntu", class: "ubuntu" },
   { name: "dracula", class: "dracula" },
