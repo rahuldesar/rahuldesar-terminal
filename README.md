@@ -24,7 +24,7 @@
   - [x] Blue-Matrix
 
 - [x] Terminal Blank UI ( `user@rahuldesar :$` + welcome screen with ascii art + minified about me )
-- [ ] Clear
+- [x] Clear
 - [ ] Cancel
 - [ ] History
 - [ ] Commands
