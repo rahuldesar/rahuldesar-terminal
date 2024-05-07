@@ -1,10 +1,13 @@
 import PromptHeader from "../PromptHeader";
 
 /* eslint-disable react/no-unescaped-entities */
-const NotFound = () => {
+const NotFound = ({ command }: { command: string }) => {
   return (
     <div>
-      <div>command not found</div>
+      <div>
+        bash: command not found:{" "}
+        <span className="text-secondary">{command}</span>
+      </div>
     </div>
   );
 };

@@ -21,19 +21,27 @@ const Common = ({ command }: { command: string }) => {
   );
 };
 
+const ThemeChanger = ({ command }: { command: string }) => {
+  const themeSwitcher = useContext(ThemeContext);
+
+  const themeName = command.split(" ")[2];
+  if (THEMES.some((theme) => theme.name === themeName)) {
+    themeSwitcher?.(themeName);
+    return <div>theme changed to {themeName}</div>;
+  }
+  return (
+    <div>
+      theme {themeName} not found, view{" "}
+      <span className="text-primary">themes</span> command to view all available
+      themes
+    </div>
+  );
+};
+
 const CommandHandler: React.FC<CommandHandlerProp> = ({
   command,
   clearScreen,
 }) => {
-  const themeSwitcher = useContext(ThemeContext);
-
-  const themeChanger = (command: string) => {
-    const themeName = command.split(" ")[2];
-    if (THEMES.some((theme) => theme.name === themeName)) {
-      themeSwitcher?.(themeName);
-    }
-  };
-
   switch (command) {
     case "themes":
       return (
@@ -48,6 +56,7 @@ const CommandHandler: React.FC<CommandHandlerProp> = ({
       return null;
 
     case "help":
+    case "?":
       return (
         <>
           <Common command={command} />
@@ -65,18 +74,17 @@ const CommandHandler: React.FC<CommandHandlerProp> = ({
 
     default:
       if (command.startsWith("themes set")) {
-        themeChanger(command);
         return (
           <>
             <Common command={command} />
-            theme yo yo
+            <ThemeChanger command={command} />
           </>
         );
       } else {
         return (
           <>
             <Common command={command} />
-            <NotFound />
+            <NotFound command={command} />
           </>
         );
       }
